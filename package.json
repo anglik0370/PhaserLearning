@@ -1,0 +1,20 @@
+{
+  "name": "phaser",
+  "version": "1.0.0",
+  "description": "Phaser를 공부하는 리포지토리 입니다",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anglik0370/PhaserLearning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anglik0370/PhaserLearning/issues"
+  },
+  "homepage": "https://github.com/anglik0370/PhaserLearning#readme"
+}
