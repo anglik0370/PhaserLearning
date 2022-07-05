@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/anglik0370/PhaserLearning/issues"
   },
-  "homepage": "https://github.com/anglik0370/PhaserLearning#readme"
+  "homepage": "https://github.com/anglik0370/PhaserLearning#readme",
+  "dependencies": {
+    "phaser": "^3.55.2"
+  }
 }
