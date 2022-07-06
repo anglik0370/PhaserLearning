@@ -4,7 +4,8 @@
   "description": "Phaser를 공부하는 리포지토리 입니다",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
+    "parceltest": "parcel index.html"
   },
   "repository": {
     "type": "git",
