@@ -126,10 +126,37 @@ export class PlayGame extends Phaser.Scene {
                     }
 
                     //결과를 보여주는 부분
-                    let reslutString : string = '';
+                    let resultString : string = '';
                     
                     //모든 result항목을 반복하고 그에 따라 결과 resultString구성
+                    result.forEach((element : number, index : number) => {
+                        resultString += this.currentWord.charAt(index) + ' : ';
+                        switch(element) {
+                            case letterState.WRONG :
+                                resultString += 'wrong letter';
+                                break;
+                            case letterState.CONRECT:
+                                resultString += 'right letter in wrong position';
+                                break;
+                            case letterState.PERFECT:
+                                resultString += 'Perfect letter';
+                                break;
+                        }
+                        resultString += '\n';
+                    });
+
+                    //resultString을 화면에 표시
+                    this.resultText.setText(resultString);
                 }
+                //유효한 단어가 아닐 시 에러 메시지 표시
+                else {
+                    this.resultText.setText('Not a valid word');
+                }
+            }
+            //문자가 5개가 아니라면 에러 메시지 표시
+            else
+            {
+                this.resultText.setText('Not a 5 letters word');
             }
         }
     }
